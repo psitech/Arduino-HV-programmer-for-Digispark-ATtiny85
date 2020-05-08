@@ -37,7 +37,7 @@ void setup() {
   Serial.println();
 
   // wait for user input
-  while (Serial.available() <= 0);  // wait for character from serial monitor
+  while (!Serial.available());  // wait for character from serial monitor
   Serial.println("Entering programming mode");
   Serial.println();
 
